@@ -1,4 +1,6 @@
-# A credit card company computes a customer's "minimum payment" according to the following rule. The minimum payment is equal to either $10 or 2.1% of the customer's balance, whichever is greater; however, if a $10 minimum payment exceeds the balance, then the minimum payment is the balance. Write a program to return the minimum payment. Assume that the variable balance contains the customer's balance.
+# A credit card company computes a customer's "minimum payment" according to the following rule. The minimum payment is equal to either $10 or 2.1% of the customer's balance,
+# whichever is greater; however, if a $10 minimum payment exceeds the balance, then the minimum payment is the balance. Write a program to return the minimum payment.
+# Assume that the variable balance contains the customer's balance.
 #   Example 1: if your balance is 1000, then your program should return 21. 
 #   Example 2: if your balance is 600, then your program should return 12.6. 
 #   Example 3: if your balance is 25, then your program should return 10. 
@@ -6,3 +8,15 @@
 
 def computeMinimumPayment( balance ):
     #TODO write code inside this function that achieves the functionality described above
+
+ # To test the program change user baance
+ 
+ minPay = max(10, 0.021*balance)
+ minPay = min(max(balance * 0.021, 10), (balance))
+ print(min(max(balance * 0.021, 10), balance))
+ return minPay
+
+
+
+
+

@@ -2,7 +2,7 @@
 # Other than that, you do not need to edit this file in any way.
 
 import q1
-import q2
+import q2 
 
 def testQ1():
     balances = { 1000, 600, 25, 8 }
@@ -12,5 +12,6 @@ def testQ1():
 print('Q1:')
 testQ1()
     
-print('Q2:')
+print('Q2:') 
 q2.playGame()
+
