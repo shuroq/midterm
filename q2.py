@@ -44,8 +44,8 @@ def subtractSticks( number ):
     # 1. subtracts the parameter `number` from the global variable `sticks`
     # 2. checks if the number subtracted resulted in the last stick, if so, return True
     # 3. if there are still sticks left, return False
-    sticks = sticks - number
-    if sticks == 0:
+    sticks= sticks - number
+    if sticks <= 0:
         return True
     else:
         return False
